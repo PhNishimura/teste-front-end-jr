@@ -1,38 +1,54 @@
-import React from 'react';
-import ProductItem from './ProductItem';
+import React, { useEffect, useState } from 'react';
+import Carousel from './Carousel'; // Ajuste o caminho conforme a estrutura do seu projeto
+import './ProductList.css';
 
 interface Product {
-  id: number;
-  name: string;
+  productName: string;
+  descriptionShort: string;
+  photo: string;
   price: number;
-  imageUrl: string;
 }
 
-interface ProductListProps {
-  searchTerm: string;
-}
+const ProductList: React.FC = () => {
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-const products: Product[] = [
-  { id: 1, name: 'iPhone 13', price: 799, imageUrl: '/images/iphone13.jpg' },
-  { id: 2, name: 'Samsung Galaxy S21', price: 699, imageUrl: '/images/galaxyS21.jpg' },
-  { id: 3, name: 'Google Pixel 6', price: 599, imageUrl: '/images/pixel6.jpg' },
-  // Adicione mais produtos aqui
-];
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json'));
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const result = await response.json();
+        const data = JSON.parse(result.contents);
+        if (data.success) {
+          setProducts(data.products);
+        } else {
+          setError('Failed to fetch products');
+        }
+      } catch (error: any) {
+        setError(error.message || 'Error fetching products');
+      } finally {
+        setLoading(false);
+      }
+    };
 
-const ProductList: React.FC<ProductListProps> = ({ searchTerm }) => {
-  const filteredProducts = products.filter(product =>
-    product.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+    fetchProducts();
+  }, []);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
 
   return (
     <div className="product-list">
-      {filteredProducts.length > 0 ? (
-        filteredProducts.map(product => (
-          <ProductItem key={product.id} product={product} />
-        ))
-      ) : (
-        <p>No products found</p>
-      )}
+      <Carousel products={products} />
     </div>
   );
 };

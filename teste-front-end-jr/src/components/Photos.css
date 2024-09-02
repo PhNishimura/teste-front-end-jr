@@ -1,0 +1,96 @@
+/* Photos.css */
+
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em uma coluna */
+    align-items: center; /* Centraliza horizontalmente todos os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 70px; /* Adiciona um espaço acima do contêiner */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os itens dentro da linha */
+    gap: 167px; /* Espaçamento entre as imagens dentro da linha */
+  }
+  
+  .partners {
+    position: relative;
+    width: 85spx; /* Largura ajustada das imagens */
+    height: 450px; /* Altura ajustada das imagens */
+
+  }
+  
+  .partners img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px; /* Ajuste o raio das bordas */
+  }
+
+  .partnersTwo {
+    position: relative;
+    width: 85spx; /* Largura ajustada das imagens */
+    height: 450px; /* Altura ajustada das imagens */
+  }
+
+  .partnersTwo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px; /* Ajuste o raio das bordas */
+  }
+  
+  .text-overlayTwo, .text-overlayThree {
+    position: absolute; /* Posição absoluta para colocar o texto sobre a imagem */
+    top: 50%; /* Centraliza verticalmente o texto */
+    left: 34%; /* Centraliza horizontalmente o texto */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+    color: white; /* Cor do texto */
+    text-align: left;
+    font-size: 20px; /* Tamanho do texto ajustado */
+    padding: 10px; /* Espaçamento interno */
+  }
+  
+  .text-overlayTwo h1, .text-overlayThree h1 {
+    font-size: 30px; /* Tamanho do texto ajustado */
+  }
+
+  .text-overlayTwo h2, .text-overlayThree h2 {
+    font-size: 23px; /* Tamanho do texto ajustado */
+  }
+  
+  .button-container {
+    margin-top: 10px; /* Espaço acima do botão ajustado */
+  }
+  
+  .buttonConf {
+    padding: 10px 20px; /* Ajuste do espaçamento interno do botão */
+    font-size: 1rem; /* Tamanho do texto ajustado dentro do botão */
+    border: none;
+    border-radius: 5px;
+    background-color: #F71963;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px; /* Largura ajustada do botão */
+    height: 50px; /* Altura ajustada do botão */
+  }
+  
+  .buttonConf:hover {
+    background-color: #e61f61;
+  }
+  
+  .text {
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .roll-img {
+    width: 1250px; /* Ajuste a largura conforme necessário */
+    height: 234px; /* Mantém a proporção da imagem */
+  }
+  .final-img {
+    width: 2114px; /* Ajuste a largura conforme necessário */
+    height: 33-px; /* Mantém a proporção da imagem */
+  }
+  

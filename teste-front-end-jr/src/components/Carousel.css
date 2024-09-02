@@ -1,0 +1,116 @@
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente o carrossel */
+  overflow: hidden;
+  padding: 0 20px; /* Espaçamento nas laterais */
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  gap: 16px; /* Espaço entre os itens do carrossel */
+}
+
+.carousel-item {
+  flex: 1 0 calc(100% / 4 - 16px); /* Ajusta a largura dos itens considerando o espaço */
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-button {
+  background-color: #ddd;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.buy-button {
+  background-color: #F71963;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.buy-button:hover {
+  background-color: #F71963;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.buy-button {
+  background-color: #F71963;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.buy-button:hover {
+  background-color: #F71963;
+}
