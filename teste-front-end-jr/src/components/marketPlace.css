@@ -1,0 +1,123 @@
+.marketplace {
+    position: relative;
+    width: 100%;
+    height: 395px; /* Mantém a altura fixa */
+  }
+  
+  .marketplace img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    position: absolute; /* Posição absoluta para colocar o texto sobre a imagem */
+    top: 25%; /* Centraliza verticalmente */
+    left: 30%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+    color: white; /* Cor do texto */
+    text-align: center;
+    font-size: 25px; /* Tamanho do texto, ajuste conforme necessário */
+    padding: 10px; /* Espaçamento interno */
+  }
+
+  .text-overlay h2{
+    position: absolute; /* Posição absoluta para colocar o texto sobre a imagem */
+    top: 74%; /* Centraliza verticalmente */
+    left: 24%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+    color: white; /* Cor do texto */
+    text-align: center;
+    font-size: 45px; /* Tamanho do texto, ajuste conforme necessário */
+    padding: 10px; /* Espaçamento interno */
+  }
+  
+  .button-container {
+    margin-top: 20px; /* Espaço acima do botão */
+  }
+  
+  .buttonBuy {
+    position: absolute; /* Posição absoluta para colocar o botão na imagem */
+    top: 135%; /* Posiciona o botão abaixo dos textos */
+    left: 2%; /* Ajuste conforme necessário para posicionar horizontalmente */
+    padding: 15px 30px; /* Aumenta o espaçamento interno do botão */
+    font-size: 1.2rem; /* Aumenta o tamanho do texto dentro do botão */
+    border: none;
+    border-radius: 5px;
+    background-color: #F71963;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px; /* Largura específica, ajuste conforme necessário */
+    height: 60px; /* Altura específica, ajuste conforme necessário */
+  }
+  
+  .buttonBuy:hover {
+    background-color: #e61f61;
+  }
+
+  
+  .cube {
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    margin-top: 20px; /* Espaço acima da seção .cube */
+    padding-left: 50px; /* Adiciona espaço à esquerda para centralizar ainda mais */
+  }
+    
+  .cube ul {
+    display: flex; /* Alinha os itens na horizontal */
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+    margin: 0; /* Remove as margens da lista */
+  }
+  
+  .cube li {
+    margin-right: 20px; /* Espaçamento entre os itens */
+  }
+  
+  .cube li img {
+    width: 185px; /* Define a largura das imagens */
+    height: auto; /* Mantém a proporção das imagens */
+  }
+
+
+  .navProducts {
+    text-align: center; /* Centraliza o título e a barra de navegação */
+    margin-bottom: 20px;
+  }
+  
+  .navProducts h1 {
+    color: #F71963; /* Cor do título */
+    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+  }
+  
+  .navProd ul {
+    display: flex; /* Alinha os itens da lista horizontalmente */
+    justify-content: center; /* Centraliza os itens da lista */
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor da lista */
+  }
+  
+  .navProd li {
+    flex: 1; /* Faz os itens ocuparem o mesmo espaço */
+    padding: 10px;
+    text-align: center; /* Centraliza o texto dentro dos itens */
+    border-right: 1px solid #ccc; /* Adiciona uma borda à direita dos itens */
+  }
+  
+  .navProd a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: black; /* Cor padrão do texto */
+    font-weight: normal;
+    font-size: 16px; /* Tamanho do texto */
+  }
+  
+  .navProd a.active {
+    color: #F71963; /* Cor do texto do item ativo */
+    font-weight: bold; /* Destaca o texto do item ativo */
+  }
+  

@@ -1,43 +1,107 @@
 /* src/components/Header.css */
+
 header {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #f8f9fa;
-  }
-  
-  header img {
-    height: 50px; /* Ajuste o tamanho da imagem conforme necessário */
-    margin-right: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  .topItens {
-    display: flex;
-    justify-content: space-around; /* Distribui o espaço entre os itens de forma uniforme */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    padding: 10px 20px;
-    background-color: #f0f0f0; /* Ajuste a cor de fundo conforme necessário */
-    color: black; /* Ajuste a cor do texto conforme necessário */
-  }
-  
-  .top-item {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaço entre a imagem e o texto */
-  }
-  
-  .top-item-icon {
-    width: 24px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 24px; /* Ajuste o tamanho da imagem conforme necessário */
-  }
-  
-  .topItens h1 {
-    margin: 0;
-    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
-    text-align: center;
-  }
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  justify-content: space-between; /* Garante que os itens estejam nas extremidades do header */
+}
+
+header img {
+  height: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  margin-right: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.topItens {
+  display: flex;
+  justify-content: space-around; /* Distribui o espaço entre os itens de forma uniforme */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 10px 20px;
+  background-color: #f0f0f0; /* Ajuste a cor de fundo conforme necessário */
+  color: black; /* Ajuste a cor do texto conforme necessário */
+}
+
+.top-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.top-item-icon {
+  width: 24px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 24px; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+.topItens h1 {
+  margin: 0;
+  font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adiciona um espaço uniforme entre os itens */
+}
+
+.images img {
+  width: 32px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 32px; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-bar input {
+  width: 647px; /* Define a largura da barra de pesquisa */
+  height: 48px; /* Define a altura da barra de pesquisa */
+  padding: 0 40px 0 10px; /* Adiciona espaço à direita para a imagem */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar .search-icon {
+  position: absolute;
+  right: 10px; /* Posiciona a imagem dentro do campo de entrada */
+  width: 24px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 24px;
+  cursor: pointer; /* Adiciona um cursor de ponteiro quando o usuário passa o mouse sobre a imagem */
+}
+
+
+.navbar {
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li {
+  padding: 14px 20px;
+}
+
+.navbar ul li a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}

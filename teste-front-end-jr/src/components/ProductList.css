@@ -1,0 +1,22 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espaço entre os itens */
+    padding: 16px;
+  }
+  
+  .product-item {
+    flex: 1 1 calc(25% - 32px); /* Ajusta a largura dos itens, levando em conta o espaçamento */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    border: 1px solid #ddd; /* Opcional: adiciona uma borda ao redor dos itens */
+    padding: 16px;
+    border-radius: 8px; /* Opcional: arredonda os cantos dos itens */
+    text-align: center; /* Opcional: centraliza o texto */
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: arredonda os cantos da imagem */
+  }
+  
