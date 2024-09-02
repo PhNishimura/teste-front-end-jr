@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   
     const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
       setSearchTerm(event.target.value);
-      // Aqui você pode adicionar a lógica para enviar o termo de pesquisa, se necessário
+      // adicionar a lógica para enviar o termo de pesquisa, se necessário
     };
     return(
         <>
