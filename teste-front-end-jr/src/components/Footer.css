@@ -1,0 +1,98 @@
+.footer {
+    width: 100%;
+    height: 325px;
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 20px;
+    font-weight: 300; /* Define a fonte como light */
+}
+
+.footer-content, .footerTwo, .footerThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Garante que os h2 fiquem alinhados verticalmente ao centro */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    text-align: left;
+    margin-right: 50px; /* Espaço entre as seções */
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+    font-weight: 300; /* Define a fonte como light */
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer li {
+    margin: 5px 0;
+    font-size: 12px;
+    font-weight: 300; /* Define a fonte como light */
+}
+
+.social-image {
+    width: 130px; /* Define a largura desejada para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 20px; /* Mover a imagem um pouco para baixo */
+}
+
+.pay-image {
+    width: 195px; /* Define a largura desejada para a imagem de pagamento */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 20px; /* Espaço superior */
+}
+
+.newsletter {
+    width: 380px; /* Largura do quadrado branco */
+    height: 260px; /* Altura do quadrado branco */
+    background-color: #fff; /* Cor de fundo branco */
+    color: #000; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha o texto verticalmente no centro */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar o quadrado */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.newsletter h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.newsletter p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.newsletter div {
+    display: flex; /* Alinha o input e o botão horizontalmente */
+    align-items: center; /* Alinha o campo e o botão verticalmente */
+}
+
+.newsletter input {
+    width: calc(100% - 72px); /* Largura do campo de entrada */
+    height: 45px; /* Altura do campo de entrada */
+    padding: 0 10px; /* Espaço interno do campo de entrada */
+    margin-right: 10px; /* Espaço entre o campo de entrada e o botão */
+    border: 1px solid #ccc; /* Borda do campo de entrada */
+    border-radius: 4px; /* Bordas arredondadas do campo de entrada */
+}
+
+.newsletter button {
+    width: 62px; /* Largura do botão */
+    height: 45px; /* Altura do botão */
+    background-color: #e91e63; /* Cor de fundo rosa */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 4px; /* Bordas arredondadas do botão */
+    font-size: 14px; /* Tamanho da fonte do botão */
+    cursor: pointer; /* Cursor pointer ao passar sobre o botão */
+    font-weight: bold; /* Texto em negrito */
+}

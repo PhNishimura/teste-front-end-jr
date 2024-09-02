@@ -64,7 +64,6 @@ const Photos: React.FC = () => {
       <div className="Marcas"> 
         <h1><span style={{ color: '#F71963' }}>Navegue por marcas </span></h1>
         <img src={roll} alt="roll" className="roll-img" />
-        <img src={final} alt="final" className="final img" ></img>
       </div>
 
     </div>
