@@ -4,10 +4,11 @@
     background-color: #333; /* Cor de fundo */
     color: #fff; /* Cor do texto */
     display: flex;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
     align-items: center; /* Alinha os itens verticalmente no centro */
     padding: 20px;
     font-weight: 300; /* Define a fonte como light */
+    position: relative; /* Necessário para o posicionamento absoluto */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura do elemento */
 }
 
 .footer-content, .footerTwo, .footerThree {
@@ -58,6 +59,9 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar o quadrado */
     border-radius: 8px; /* Bordas arredondadas */
+    position: absolute; /* Permite o posicionamento absoluto */
+    right: 20px; /* Distância do lado direito da página */
+    top: 20px; /* Distância do topo da página */
 }
 
 .newsletter h2 {
