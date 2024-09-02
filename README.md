@@ -1,31 +1,52 @@
+
 # Teste Econverse: Vaga Desenvolvedor Front-End Jr
 
-### Vem ser #Econverse!
+Nesse projeto, foi pedido para fazer uma pagina inicial de um site de vendas, e um dos desafios era colocar um Modal, quando clicado em comprar. O objetivo é demonstrar habilidades em HTML, CSS, typeScrip e React para criar uma interface de usuário interativa e funcional.
 
-Segue abaixo as instruções para a execução do teste.
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
 
-**Boa sorte! ;)**
+## Funcionalidades
+
+- Página de Vendas: Exibe informações sobre o produto, como nome, descrição e preço.
+- Botão "Comprar": Quando clicado, abre um modal com detalhes da compra.
+- Modal de Compra: Exibe informações adicionais e um botão para confirmar a compra.
+## Instalação
+
+Instale my-project com npm Para instalar meu projeto e necessario clonar meu repositorio e logo depois abrir o pasta "teste-front-end-jr" e rodar o comando npm start
+
+```bash
+  cd teste-front-end-jr
+  npm start
+```
+    
+## Tecnologias Utilizadas
+
+- HTML: Estruturação da página.
+- CSS: Estilização e layout responsivo.
+- typeScrip: Funcionalidade do modal.
+- React: framework
+## Reflexões sobre o Desafio
+
+Este desafio foi uma experiência valiosa e desafiadora para mim, especialmente porque foi o meu primeiro teste prático em uma entrevista. Abaixo, compartilho alguns dos principais desafios e aprendizados que tive ao longo do desenvolvimento:
+
+## Reflexões sobre o Desafio
+
+Este desafio foi uma experiência valiosa e desafiadora para mim, especialmente porque foi o meu primeiro teste prático em uma entrevista. Abaixo, compartilho alguns dos principais desafios e aprendizados que tive ao longo do desenvolvimento:
+
+### Desafios Enfrentados
+
+1. **Uso de TypeScript com React:**
+   Trabalhar com TypeScript pela primeira vez foi um desafio significativo. Eu nunca havia utilizado TypeScript e React em projetos antes, o que exigiu um tempo considerável para aprender e entender as melhores práticas. Fiquei surpreso com a necessidade de ser explícito na definição de tipos e a complexidade adicional que isso trouxe para o código.
+
+2. **Documentação e Aprendizado:**
+   Devido à falta de experiência com TypeScript, consultei diversas documentações e tutoriais para superar as dificuldades. Isso foi essencial para a minha aprendizagem e para garantir que o código estivesse correto e bem estruturado. A experiência me ajudou a melhorar minhas habilidades em pesquisa e resolução de problemas.
+
+3. **Primeiro Teste Prático:**
+   Este foi o meu primeiro teste prático para uma entrevista de estágio, e eu estava ansioso para demonstrar minhas habilidades e capacidades. O desafio me proporcionou uma ótima oportunidade para aplicar o que aprendi em teoria, e eu estou satisfeito com o que consegui realizar.
+
+### Expectativas Futuras
+
+Como esta é uma vaga de estágio, estou muito animado com a perspectiva de continuar aprendendo e crescendo na área. Este projeto foi apenas o início, e estou ansioso para explorar mais sobre TypeScript, React e outras tecnologias relevantes. Acredito que a experiência adquirida neste desafio será fundamental para meu desenvolvimento profissional futuro.
